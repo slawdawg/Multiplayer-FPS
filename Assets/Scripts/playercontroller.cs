@@ -28,10 +28,10 @@ public class playercontroller : MonoBehaviour
         
 
         //Final Movement Vector
-        Vector3 _volicity = (_movHorizontal + _movVertical).normalized * speed;
+        Vector3 _velocity = (_movHorizontal + _movVertical).normalized * speed;
 
         //Apply Movement
-        motor.Move(_volicity);
+        motor.Move(_velocity);
 
         //Calculate rotation as a 3d vector (turning around)
         float _yRot = Input.GetAxisRaw("Mouse X");
