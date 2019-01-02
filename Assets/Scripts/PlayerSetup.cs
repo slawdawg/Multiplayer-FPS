@@ -14,7 +14,8 @@ public class PlayerSetup : NetworkBehaviour
         if (!isLocalPlayer)
         {
             DisableComponents();
-        } else
+        }
+        else
         {
             sceneCamera = Camera.main;
 
